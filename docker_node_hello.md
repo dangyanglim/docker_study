@@ -45,5 +45,5 @@ CMD ["node","/src/hello/index"]
 # centos6.8步骤
 ```bash
 yum -y install docker-io
-
+docker build --rm -t node-hello .
 ```
