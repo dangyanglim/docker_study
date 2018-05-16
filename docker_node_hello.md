@@ -46,4 +46,5 @@ CMD ["node","/src/hello/index"]
 ```bash
 yum -y install docker-io
 docker build --rm -t node-hello .
+docker run -d -p 4001:4001 --name nodejs1 node-hello
 ```
