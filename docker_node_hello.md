@@ -29,7 +29,7 @@ var server = app.listen(4001, function () {
  }
 }
 ```
-# dockerfile
+# Dockerfile
 ```
 
 FROM node:8.9.0
@@ -41,4 +41,9 @@ RUN npm install
 EXPOSE 4001
 CMD ["node","/src/hello/index"]
 
-````
+```
+# centos6.8步骤
+```bash
+yum -y install docker-io
+
+```
