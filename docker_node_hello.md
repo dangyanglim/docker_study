@@ -16,3 +16,29 @@ var server = app.listen(4001, function () {
 
 })
 ```
+# package.json
+```
+
+{
+ "name": "docker-node-hello",
+ "private": true,
+ "version": "0.0.1",
+ "description": "Node.js Hello world app on Ubuntu using docker",
+ "dependencies": {
+   "express": "4.x.x"
+ }
+}
+```
+# dockerfile
+```
+
+FROM node:8.9.0
+RUN mkdir -p /src/hello
+COPY . /src/hello
+RUN ls /src/hello
+WORKDIR /src/hello
+RUN npm install
+EXPOSE 4001
+CMD ["node","/src/hello/index"]
+
+````
