@@ -42,7 +42,7 @@ RUN mkdir -p /src/hello
 COPY . /src/hello
 RUN ls /src/hello
 WORKDIR /src/hello
-RUN npm install
+RUN npm install --registry=https://registry.npm.taobao.org
 EXPOSE 4001
 CMD ["node","/src/hello/index"]
 ```
