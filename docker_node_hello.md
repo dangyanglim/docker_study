@@ -1,4 +1,11 @@
-# index.js
+# centos6.8步骤
+```bash
+yum -y install docker-io
+docker build --rm -t node-hello .
+docker run -d -p 4001:4001 --name nodejs1 node-hello
+```
+
+## index.js
 ```
 var express = require('express')
 var app = express()
@@ -16,7 +23,7 @@ var server = app.listen(4001, function () {
 
 })
 ```
-# package.json
+## package.json
 ```
 
 {
@@ -29,7 +36,7 @@ var server = app.listen(4001, function () {
  }
 }
 ```
-# Dockerfile
+## Dockerfile
 ```
 
 FROM node:8.9.0
@@ -42,9 +49,4 @@ EXPOSE 4001
 CMD ["node","/src/hello/index"]
 
 ```
-# centos6.8步骤
-```bash
-yum -y install docker-io
-docker build --rm -t node-hello .
-docker run -d -p 4001:4001 --name nodejs1 node-hello
-```
+
