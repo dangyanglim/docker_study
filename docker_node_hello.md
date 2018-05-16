@@ -3,7 +3,7 @@
 yum -y install docker-io
 docker build --rm -t node-hello .
 docker run -d -p 4001:4001 --name nodejs1 node-hello
-docker exec -it some-mysql bash#进入容器交互
+docker exec -it nodjes1 bash#进入容器交互
 ```
 
 ## index.js
