@@ -46,5 +46,7 @@ RUN npm install
 EXPOSE 4001
 CMD ["node","/src/hello/index"]
 ```
-
+##
+[docker安装nodejs](https://segmentfault.com/a/1190000009082156)  
+[Docker 跟 NodeJs 最佳实践](https://www.cnblogs.com/ruicky/p/6595937.html)
  
