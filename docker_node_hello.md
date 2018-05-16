@@ -1,4 +1,4 @@
-# centos6.8步骤
+# centos6.8 docker运行node应用
 ```bash
 yum -y install docker-io
 docker build --rm -t node-hello .
@@ -49,4 +49,7 @@ EXPOSE 4001
 CMD ["node","/src/hello/index"]
 
 ```
-
+# 参考
+- [docker安装nodejs](https://segmentfault.com/a/1190000009082156)
+-[Docker 跟 NodeJs 最佳实践](https://www.cnblogs.com/ruicky/p/6595937.html)
+ 
