@@ -25,7 +25,6 @@ var server = app.listen(4001, function () {
 ```
 ## package.json
 ```
-
 {
  "name": "docker-node-hello",
  "private": true,
@@ -37,8 +36,7 @@ var server = app.listen(4001, function () {
 }
 ```
 ## Dockerfile
-```
-
+```bash
 FROM node:8.9.0
 RUN mkdir -p /src/hello
 COPY . /src/hello
@@ -47,9 +45,8 @@ WORKDIR /src/hello
 RUN npm install
 EXPOSE 4001
 CMD ["node","/src/hello/index"]
-
 ```
-# 参考  
+ 参考  
 [docker安装nodejs](https://segmentfault.com/a/1190000009082156)  
 [Docker 跟 NodeJs 最佳实践](https://www.cnblogs.com/ruicky/p/6595937.html)
  
