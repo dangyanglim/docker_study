@@ -3,7 +3,7 @@
 docker build -t 13/docker-mysql .
 docker run -d -p 13306:3306 13/docker-mysql
 docker exec -it 9db491b1d760 /bin/bash
-mysql -u docker -p
+mysql -u docker -P 13306 -p
 ```
 
 ## Dockerfile  
